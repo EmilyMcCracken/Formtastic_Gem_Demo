@@ -100,6 +100,27 @@ Example:
 
 >This will show while a user is filling out a form. It is helpful for when you want them to have some extra information to help them fill out your forms. 
 
+<h4> 2. Labels: </h4>
+Labels are put in the same line as the 'input' part of the form.
+
+Example: 
+```
+<%= f.input :lname, :label => "Last Name"%>
+```
+
+>This is useful for when you want something different to display to the user than what you have in your models. In this case, I used 'lname' as a column in my model but wanted "Last Name" displayed to user when they were filling out my form. 
+
+<h4> 3. Validation Errors </h4>
+These are automatically rendered by Formtastic when you add validations to your models. In the example below, I have a validation to make sure a new article can't be submitted without a name. The below code would be in your model.rb for the model you want to have validations.
+
+Example: 
+```
+validates_presence_of :name
+```
+
+>Formtastic will automatically an a '*' next to any field of your form that has a presence validation so that your user knows it is a required field. Also, if the user tries to submit without that field, Formtastic automatically renders an error message that the field can't be blank. See below image. 
+
+
 
 <h2> Documentation & Resources! </h2>
 I recommend these sites for more information and to delve deeper into Formtastic!
