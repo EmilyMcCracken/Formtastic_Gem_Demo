@@ -118,9 +118,11 @@ Example:
 validates_presence_of :name
 ```
 
->Formtastic will automatically an a '*' next to any field of your form that has a presence validation so that your user knows it is a required field. Also, if the user tries to submit without that field, Formtastic automatically renders an error message that the field can't be blank. See below image. 
+>Formtastic will automatically add an '*' next to any field of your form that has a presence validation so that your user knows it is a required field. Also, if the user tries to submit without that field, Formtastic automatically renders an error message that the field can't be blank. See below image. 
 
 <img src="app/assets/images/error_message.png" alt="">
+
+----------------------------------------------------------------------------------------------
 
 <h2> Documentation & Resources! </h2>
 I recommend these sites for more information and to delve deeper into Formtastic!
@@ -132,6 +134,11 @@ http://www.rubydoc.info/gems/formtastic/3.1.3
 http://buildingrails.com/a/formtastic_forms_in_rails_for_beginners
 <br>
 http://railscasts.com/episodes/184-formtastic-part-1
+
+----------------------------------------------------------------------------------------------
+
+<h1> Demo-ing Better_Errors Gem using Dylan Weinberger's Instructions </h1>
+Using Dylan's instructions for the Better_Errors gem made it really easy to install and now the errors I get on my rails app are much easier to decode. Also, using it along with Formtastic, seeing the variables on the better_errors page shows me what is really happening behind the scenes with Formtastic. The installation was very easy (just adding it to your Gemfile and bundle installing) but figuring out what you can do with the actual errors page takes some getting used to. I found Dylan's documentation very helpful while trying to identify what the page was telling me and now it's a great asset to my projects! 
 
 
 
