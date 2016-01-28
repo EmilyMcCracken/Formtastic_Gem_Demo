@@ -11,6 +11,7 @@ First, add the Formtastic gem to the Gemfile of your new app:  gem 'formtastic',
 After all of that is completed, go into your app and go to app/assets/stylesheets/application.css and put in:
 <br>
   *= require formtastic
+  <br>
   *= require my_formtastic_changes
 
 Finally, go back to your command line and put: touch app/assets/stylesheets/my_formtastic_changes.css.
