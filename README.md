@@ -47,8 +47,11 @@ This now will dynamically populate the drop downs for 'category' and 'author'. W
 
 <h2> Documentation & Resources! </h2>
 Thanks to these sites for all their useful information!
+<br>
 http://www.rubydoc.info/gems/formtastic/3.1.3
+<br>
 http://buildingrails.com/a/formtastic_forms_in_rails_for_beginners
+<br>
 http://railscasts.com/episodes/184-formtastic-part-1
 
 
