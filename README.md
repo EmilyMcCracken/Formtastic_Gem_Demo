@@ -60,6 +60,17 @@ Here is how it would render on the 'show' page for an Author.
 
 <img src="app/assets/images/author_show.png" alt="">
 
+<h2> Other Features! </h2>
+
+Some other features I implemented... 
+
+<h4> 1. Hints: </h4>
+Hints are put in the same line as the 'input' part of the form.
+
+Example:  <%= f.input :email, :hint => "must be a valid email to proceed!"%>
+
+This will show while a user is filling out a form. It is helpful for when you want them to have some extra information to help them fill out your forms. 
+
 
 <h2> Documentation & Resources! </h2>
 I recommend these sites for more information and to delve deeper into Formtastic!
