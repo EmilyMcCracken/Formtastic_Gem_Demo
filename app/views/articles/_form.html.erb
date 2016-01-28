@@ -1,7 +1,7 @@
 <%= semantic_form_for @article do |f| %>
   <%= f.inputs do %>
-    <%= f.input :name %>
-    <%= f.input :body %>
+    <%= f.input :name, input_html: { size: 20 }%>
+    <%= f.input :body, input_html: { size: 30 }%>
     <%= f.input :author_id, :as => :select, :collection => Hash[Author.all.map{|b| [b.fname + " " + b.lname, b.id]}] %>
     <%= f.input :category_id, :as => :select, :collection => Hash[Category.all.map{|b| [b.name, b.id]}] %>
   <% end %>
