@@ -47,12 +47,15 @@ This now will dynamically populate the drop downs for 'category' and 'author'. W
 And now you can call on this relationship easily! 
 
 For instance, you can list the articles attached to an author by calling:
-<br>
-@author.articles.each do |article|<br>
-article.name<br>
-article.body<br>
+    <% @author.articles.each do |article| %><br>
+      	<br>
+        <td><%= article.name %></td><br>
+        <td><%= article.body %></td><br>
+    <% end %><br>
 
-and it will display the articles that have that author_id associated with them through the Formtastic forms! 
+and it will display the articles that have that author_id associated with them through the Formtastic forms! The above example incorporates ruby code and code determined by Formtastic. Here is how it would render on the 'show' page for an Author. 
+
+<img src="app/assets/images/author_show.png" alt="">
 
 
 <h2> Documentation & Resources! </h2>
