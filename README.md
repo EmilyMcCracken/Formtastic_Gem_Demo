@@ -118,9 +118,11 @@ Example:
 validates_presence_of :name
 ```
 
->Formtastic will automatically an a '*' next to any field of your form that has a presence validation so that your user knows it is a required field. Also, if the user tries to submit without that field, Formtastic automatically renders an error message that the field can't be blank. See below image. 
+>Formtastic will automatically add an '*' next to any field of your form that has a presence validation so that your user knows it is a required field. Also, if the user tries to submit without that field, Formtastic automatically renders an error message that the field can't be blank. See below image. 
 
 <img src="app/assets/images/error_message.png" alt="">
+
+----------------------------------------------------------------------------------------------
 
 <h2> Documentation & Resources! </h2>
 I recommend these sites for more information and to delve deeper into Formtastic!
