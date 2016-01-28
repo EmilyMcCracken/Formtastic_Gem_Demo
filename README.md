@@ -15,10 +15,13 @@ Then also run this on your command line:
 rails generate formtastic:install.
 
 After all of that is completed, go into your app and go to app/assets/stylesheets/application.css and put in:
+
+```
 <br>
-  *= require formtastic
-  <br>
-  *= require my_formtastic_changes
+ *= require formtastic
+ <br>
+*= require my_formtastic_changes
+```
 
 Finally, go back to your command line and put: touch app/assets/stylesheets/my_formtastic_changes.css.
 
