@@ -16,5 +16,5 @@ Finally, go back to your command line and put: touch app/assets/stylesheets/my_f
 
 <h3> You're all set up and ready to have FORMTASTIC forms!! </h3>
 
-<h4> PSA: if you are primarily using ie6 or ie7, please refer to Justin French's original documentation for further setup instructions </h4>
+<p> PSA: if you are primarily using ie6 or ie7, please refer to Justin French's original documentation for further setup instructions </p>
 
