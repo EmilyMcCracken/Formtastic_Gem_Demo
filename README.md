@@ -6,9 +6,7 @@
 Created a Rails app with 3 models and 3 controllers to display the functionality of the Formtastic gem and how it can make building forms in a multi-model app much easier!
 
 <h2> Getting Set Up... </h2>
-First, add the Formtastic gem to the Gemfile of your new app:  
-<br>
-gem 'formtastic', '~> 3.0'. 
+First, add the Formtastic gem to the Gemfile of your new app:  gem 'formtastic', '~> 3.0'. 
 <br>
 Then bundle install. 
 <br>
