@@ -38,6 +38,11 @@ When formtastic automatically generates your forms, it includes input selections
 
 <img src="app/assets/images/form_example.png" alt="">
 
+This now will dynamically populate the drop downs for 'category' and 'author'. When a new category or author are created, it will automatically appear in the drop down list when someone is making a new article. 
+
+<img src="app/assests/images/article_example.png">
+<img src="app/assests/images/new_article.png" alt="">
+
 
 
 
