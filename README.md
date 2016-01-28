@@ -36,7 +36,7 @@ In my example above, I have a Category model (with name), an Author model (with 
 
 When formtastic automatically generates your forms, it includes input selections for each column in your model. By adding a little bit of extra code to the inputs for category_id and author_id, you can link your relationships with ease. 
 
-<img src="images/form_example.png" alt="">
+<img src="app/assets/images/form_example.png" alt="">
 
 
 
