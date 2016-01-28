@@ -135,6 +135,11 @@ http://buildingrails.com/a/formtastic_forms_in_rails_for_beginners
 <br>
 http://railscasts.com/episodes/184-formtastic-part-1
 
+----------------------------------------------------------------------------------------------
+
+<h1> Demo-ing Better_Errors Gem using Dylan Weinberger's Instructions </h1>
+Using Dylan's instructions for the Better_Errors gem made it really easy to install and now the errors I get on my rails app are much easier to decode. Also, using it along with Formtastic, seeing the variables on the better_errors page shows me what is really happening behind the scenes with Formtastic. The installation was very easy (just adding it to your Gemfile and bundle installing) but figuring out what you can do with the actual errors page takes some getting used to. I found Dylan's documentation very helpful while trying to identify what the page was telling me and now it's a great asset to my projects! 
+
 
 
 
