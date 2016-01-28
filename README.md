@@ -14,17 +14,6 @@ gem 'formtastic', '~> 3.0'.
 Then run this on your command line: 
 ```
 rails generate formtastic:install.
-<<<<<<< HEAD
-
-After all of that is completed, go into your app and go to app/assets/stylesheets/application.css and put in:
-
-```
-<br>
- *= require formtastic
- <br>
-*= require my_formtastic_changes
-```
-=======
 ```
 
 After all of that is completed, go into your app and go to 
@@ -36,7 +25,6 @@ and put in:
   *= require formtastic
   *= require my_formtastic_changes
   ```
->>>>>>> b50e2d6bc0e21fb0959df363e4e69d9773c09488
 
 Finally, go back to your command line and put: 
 ```
@@ -132,7 +120,7 @@ validates_presence_of :name
 
 >Formtastic will automatically an a '*' next to any field of your form that has a presence validation so that your user knows it is a required field. Also, if the user tries to submit without that field, Formtastic automatically renders an error message that the field can't be blank. See below image. 
 
-
+<img src="app/assets/images/error_message.png" alt="">
 
 <h2> Documentation & Resources! </h2>
 I recommend these sites for more information and to delve deeper into Formtastic!
