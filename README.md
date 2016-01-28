@@ -29,5 +29,15 @@ Finally, go back to your command line and put: touch app/assets/stylesheets/my_f
 <h2> Starting Your App </h2>
 I suggest using 'rails generate scaffold' to create your app structure. For example, I started with 'rails generate scaffold Category name:string' and it created my model, controller (with actions) and views (with forms rendered and links to get around). You may of course want to rework some of this structuring as you get deeper into creating your app for your needs but Formtastic does an amazing job starting you off. 
 
+<h2> Relationship Connection Feature </h2>
+One of my favorite features of Formtastic is how easy it makes relationships/associations between models. As long you have your models set up correctly (belongs_to, has_many, etc) then Formtastic will recognize your relationship and act according. 
+
+In my example above, I have a Category model (with name), an Author model (with fname, lname and email) and an Article model (with name, body, category_id and author_id). I also have my models set up so that Articles belong to a category and an author while Categories and Authors have many articles. I need my articles to take in a category_id and author_id when creating a new one -- Formtastic makes this incredibly simple! 
+
+When formtastic automatically generates your forms, it includes input selections for each column in your model. By adding a little bit of extra code to the inputs for category_id and author_id, you can link your relationships with ease. 
+
+<img src="images/form_example.png" alt="">
+
+
 
 
