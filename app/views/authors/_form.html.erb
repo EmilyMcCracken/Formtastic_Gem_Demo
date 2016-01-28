@@ -1,0 +1,11 @@
+<%= semantic_form_for @author do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :fname, :label => "First Name"%>
+    <%= f.input :lname, :label => "Last Name"%>
+    <%= f.input :email, :hint => "must be a valid email to proceed!"%>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>
