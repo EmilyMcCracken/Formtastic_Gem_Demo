@@ -38,14 +38,18 @@ touch app/assets/stylesheets/my_formtastic_changes.css.
 <h2> Starting Your App </h2>
 I suggest using 'rails generate scaffold' to create your app structure. For example, I started with 
 ```
-'rails generate scaffold Category name:string'
+rails generate scaffold Category name:string
 ```
-and it created my model, controller (with actions) and views (with forms rendered and links to get around). You may of course want to rework some of this structuring as you get deeper into creating your app for your needs but Formtastic does an amazing job starting you off. 
+and it created my model, controller (with actions) and views (with forms rendered and links to get around). 
+
+You may of course want to rework some of this structuring as you get deeper into creating your app for your needs but Formtastic does an amazing job starting you off. 
 
 <h2> Relationship Connection Feature </h2>
 One of my favorite features of Formtastic is how easy it makes relationships/associations between models. As long you have your models set up correctly (belongs_to, has_many, etc) then Formtastic will recognize your relationship and act according. 
 
-In my example above, I have a Category model (with name), an Author model (with fname, lname and email) and an Article model (with name, body, category_id and author_id). I also have my models set up so that Articles belong to a category and an author while Categories and Authors have many articles. I need my articles to take in a category_id and author_id when creating a new one -- Formtastic makes this incredibly simple! 
+In my example above, I have a Category model (with name), an Author model (with fname, lname and email) and an Article model (with name, body, category_id and author_id). I also have my models set up so that Articles belong to a category and an author while Categories and Authors have many articles. 
+
+I need my articles to take in a category_id and author_id when creating a new one -- Formtastic makes this incredibly simple! 
 
 When formtastic automatically generates your forms, it includes input selections for each column in your model. By adding a little bit of extra code to the inputs for category_id and author_id, you can link your relationships with ease. 
 
@@ -66,16 +70,19 @@ This now will dynamically populate the drop downs for 'category' and 'author'. W
 And now you can call on this relationship easily! 
 
 For instance, you can list the articles attached to an author by calling:
+```
     <% @author.articles.each do |article| %><br>
       	<br>
         <td><%= article.name %></td><br>
         <td><%= article.body %></td><br>
     <% end %><br>
+```
 
-and it will display the articles that have that author_id associated with them through the Formtastic forms! The above example incorporates ruby code and code determined by Formtastic. 
-<br>
-<br>
-Here is how it would render on the 'show' page for an Author. 
+and it will display the articles that have that author_id associated with them through the Formtastic forms! 
+
+The above example incorporates ruby code and code determined by Formtastic. 
+
+Here is how it would render on the 'show' page for an Author: 
 
 <img src="app/assets/images/author_show.png" alt="">
 
@@ -86,9 +93,12 @@ Some other features I implemented...
 <h4> 1. Hints: </h4>
 Hints are put in the same line as the 'input' part of the form.
 
-Example:  <%= f.input :email, :hint => "must be a valid email to proceed!"%>
+Example: 
+```
+<%= f.input :email, :hint => "must be a valid email to proceed!"%>
+```
 
-This will show while a user is filling out a form. It is helpful for when you want them to have some extra information to help them fill out your forms. 
+>This will show while a user is filling out a form. It is helpful for when you want them to have some extra information to help them fill out your forms. 
 
 
 <h2> Documentation & Resources! </h2>
