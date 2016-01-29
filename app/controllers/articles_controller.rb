@@ -14,6 +14,9 @@ class ArticlesController < ApplicationController
 
   # GET /articles/new
   def new
+    # form is rendered from the partial in the views folder
+    # automatically generated using columns from model
+    # added code so that it populates drop downs for author_id and category_id 
     @article = Article.new
   end
 
